@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Anton', sans-serif;
+    line-height: 2.8rem;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    padding: 0.5rem;
+}
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: .8rem;
+}
+
+
+.nav {
+    height: 100vh;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: none;
+    padding: 1rem 1rem;
+    margin: 0;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+} 
+
+.nav li {
+    list-style: none;
+    writing-mode: vertical-lr;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 0.8rem;
+    color: wheat;
+}
+
+.nav li.active a,
+.nav li.active:hover a {
+    transition: .6s ease;
+    color: #FF3D3D;
+}
+
+/*
+.nav {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    justify-content: end;
+    grid-template-columns:  max-content;
+}
+
+.nav li {
+    writing-mode: vertical-lr;
+    text-align: right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+}*/
+
+
+
+/*------------------Header------------------*/
+
+.header{
+    background-image: url(/images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 80%;
+    overflow: hidden;
+    padding-top: 15%;
+}
+
+.pequeño{
+    text-align: left;
+    padding-left: 6%;
+    font-size: 4rem;
+    line-height: 8rem;
+
+}
+
+.grande {
+    text-align: left;
+    padding-left: 6%;
+    font-size: 7rem;
+}
+
+.header p {
+    text-align: left;
+    padding-left: 6%;
+    padding-top: 0.5rem;
+}
+
+/*------------------Flecha------------------*/
+
+.icono {
+    position: absolute;
+    bottom: 5%;
+    left: 46%;
+    animation: sube-baja 1.5s ease infinite;
+}
+
+.icono a {
+    font-size: 2rem;
+}
+
+@keyframes sube-baja {
+    0% { transform: translateY(15px);}
+    50% { transform: translateY(0);}
+    100% { transform: translateY(15px);}
+}
+
+/*------------------Situacion------------------*/
+
+.situacion {
+    background-color: black;
+    overflow: hidden;
+}
+
+.situacion div{
+    display: flex;
+    align-items: stretch;
+}
+
+.image1{
+    width: 45vw;
+    background-image: url(/images/situacion.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.texto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 45%;
+}
+
+.texto1 h2 {
+    text-align: left;
+    padding-left: 6%;
+    font-size: 4rem;
+    line-height: 5.5rem;
+}
+
+.texto1 p {
+    text-align: left;
+    padding-left: 6%;
+}
+
+.boton {
+    width: 100px;
+    height: 40px;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 6%;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 20px;
+}
+
+.boton:hover,
+.boton:active {
+    background: red;
+}
+
+.boton1 {
+    background: #FF3D3D;
+}
+
+
+
+
+/*------------------Problematicas------------------*/
+
+.problemas {
+   overflow: hidden;
+}
+
+
+.problemas article:nth-child(1) {
+    background-image:url(/images/problema1.jpg);
+    background-size: 70vw 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    /*object-fit: scale-down;*/
+}
+
+.problemas article:nth-child(2) {
+    background-image: url(/images/problema2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*object-fit: scale-down;*/
+}
+
+.problemas article:nth-child(3) {
+    background-image: url(/images/problema3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*object-fit: scale-down;*/
+}
+
+.problema3 p{
+    color: black;
+}
+
+.info-problema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 43%;
+}
+
+.info-problema h2 {
+    text-align: left;
+    padding-left: 6%;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #FFC329;
+}
+
+.info-problema p {
+    padding-top: 1rem;
+    text-align: left;
+    padding-left: 6%;
+}
+
+.boton2:hover,
+.boton2:active {
+    background: rgb(255, 166, 0);
+}
+
+.boton2 {
+    background: #FFC329;
+    color: black;
+}
+
+
+
+/*--------Flechas--------*/
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev  {
+    top:95%;
+
+}
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 35%;
+    border-width: 15px 15px 15px 0;
+}
+
+.fp-controlArrow.fp-next {
+    right: 45%;
+    border-width: 15px 0px 15px 15px;
+}
+
+
+
+/*------------------Personajes------------------*/
+
+.personajes {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pers-titulo {
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 6%;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+
+}
+
+.container {
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+    perspective: 900px;
+    overflow: hidden;
+}
+
+.card {
+    width: 17rem;
+    height: 30rem;
+    position: relative;
+    display: flex;
+    text-align: center;
+    transform-style: preserve-3d;
+    font-size: 0.8rem;
+}
+
+.card h2 {
+    color: black;
+}
+
+.card p {
+    color: black;
+}
+
+.sideB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.card:hover .sideA{
+    transform: rotateY(180deg);
+}
+
+.card:hover .sideB{
+    transform: rotateY(0deg);
+}
+
+
+[class*=side]{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform .5s;
+}
+
+
+.sideA {
+    background-color: #363141;
+}
+
+.sideB {
+    background-color: #FFC329;
+    transform: rotateY(-180deg);
+}
+
+
+
+.sideA-card1 {
+    background-image: url(/images/personaje1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sideA-card2 {
+    background-image: url(/images/personaje2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sideA-card3 {
+    background-image: url(/images/personaje3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/*------------------Tamaños------------------*/
+
+@media screen and (max-width: 870px){
+
+    /*-------------Header-------------*/
+    .header{
+        background-position: center;
+    }
+    .pequeño{
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+    
+    .grande {
+        font-size: 5rem;
+    }
+    .encabezado{
+        padding-top: 30%;
+        width: 70%;
+    }
+
+    /*-------------Situacion-------------*/
+    .situacion div{
+        display: flex;
+        flex-direction: column;
+    }
+    .image1{
+        height: 80vh;
+        width: 100%;
+        background-image: url(/images/situacion.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .texto1 {
+        width: 70%;
+    }
+    
+    .texto1 h2 {
+        padding-top: 1.5rem;
+    }
+
+    /*-------------Problemas-------------*/
+    .problemas article:nth-child(1) {
+        background-image:url(/images/problema1.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+    
+    
+    .info-problema {
+        width: 70%;
+
+    }
+
+    .problema1 {
+        padding-bottom: 10%
+    }
+
+    .problema2 {
+        padding-top: 20%
+    }
+
+    .problema3 {
+        padding-bottom: 10%;
+    }
+
+
+    /*-------------Personajes-------------*/
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   
+
+    .card {
+        flex-basis: 100%;
+        min-width: 30rem;
+    }
+
+    .sideA-card1 {
+        background-position-y: 20%;
+    }
+
+    .sideA-card2 {
+        background-position-y: 20%;
+    }
+    
+    .sideA-card3 {
+        background-position-y: 20%;
+    }
+}
+
+
+
+@media screen and (max-width: 570px){
+    /*-------------Header-------------*/
+    .header{
+        background-position: center;
+    }
+
+    
+    .pequeño{
+        font-size: 2.5rem;
+        line-height: .5rem;
+    }
+    
+    .grande {
+        font-size: 4rem;
+    }
+    .encabezado{
+        padding-top: 50%;
+        width: 80%;
+    }
+
+    /*-------------Situacion-------------*/
+    
+    .texto1 {
+        width: 80%;
+    }
+    
+    .texto1 h2 {
+        padding-top: .5rem;
+        font-size: 2.5rem;
+    }
+
+    /*-------------Problemas-------------*/
+    .info-problema h2{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .info-problema {
+        width: 80%;
+    }
+
+    /*-------------Personajes-------------*/
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        flex-basis: 100%;
+        min-width: 20rem;
+    }
+
+    .sideA-card1 {
+        background-position-y: 20%;
+    }
+
+    .sideA-card2 {
+        background-position-y: 20%;
+    }
+    
+    .sideA-card3 {
+        background-position-y: 20%;
+    }
+
+    .sideB h2{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .sideB p{
+        font-size: .7rem;
+    }
+
+    .nav li {
+        list-style: none;
+        writing-mode: vertical-lr;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        font-size: 0.6rem;
+    }
+
+}

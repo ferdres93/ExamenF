@@ -1,0 +1,17 @@
+const secciones = new fullpage('#fullpage', {
+    autoScrolling: true,
+	//fitToSection: false,
+	//fitToSectionDelay: 200,
+	easing: 'easeInOutCubic',
+	scrollingSpeed: 700,
+	css3: true,
+	easingcss3: 'ease-out',
+	loopBottom: false,
+    navigation: false,
+	menu: '#menu',
+	anchors: ['inicio', 'situación', 'problemáticas', 'personajes',],
+	navigationTooltips: ['Inicio', 'Situación','Problemáticas', 'Personajes',],
+	//showActiveTooltip: false,
+	sectionsColor : ['#000', '#000', '#000',],
+	//verticalCentered: true,
+});
